@@ -17,7 +17,7 @@ body {
 
 .nav__list {
     display: flex;
-    /* background-color: aqua; */
+
     justify-content: flex-end;
     padding: 1rem 2rem;
     gap: 2rem;
@@ -34,13 +34,16 @@ body {
     font-weight: bold;
 }
 
+main {
+    min-height: 650px;
+}
+
 /* Title section */
 .title {
     padding: 3rem 8rem;
     display: flex;
     justify-content: flex-start;
     gap: 5rem;
-    /* background-color: bisque; */
     min-width: 700px;
 }
 
@@ -186,6 +189,44 @@ body {
 
 .itemsborad__itembox__yearbox__type {
     color: #8695A4;
+}
+
+.itemsboard__items_line hr {
+    border: 1px solid #E0E0E0;
+}
+
+
+/* blog page */
+nav .current {
+    color: #FF6464;
+}
+
+.blog {
+    padding: 2rem 8rem;
+}
+
+.blog__title {
+    padding: 1rem 0;
+}
+
+.blog__itemsbox {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.blog__itemsbox hr {
+    margin-top: -1.5rem;
+    border: 1px solid #E0E0E0;
+}
+
+.blog__itemsbox .textbox {
+    padding: 0;
+}
+
+.textbox__midsection__handlebar {
+    color: #E0E0E0;
 }
 
 /* footer section */
