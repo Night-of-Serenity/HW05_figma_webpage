@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
 .container {
     display: flex;
     flex-flow: column;
