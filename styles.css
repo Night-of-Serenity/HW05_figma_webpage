@@ -13,7 +13,7 @@
 
 .nav__list {
     display: flex;
-    background-color: aqua;
+    /* background-color: aqua; */
     justify-content: flex-end;
     padding: 1rem 2rem;
     gap: 2rem;
@@ -25,6 +25,8 @@
 
 .nav__list a{
     text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 /* Title section */
@@ -33,7 +35,7 @@
     display: flex;
     justify-content: flex-start;
     gap: 5rem;
-    background-color: bisque;
+    /* background-color: bisque; */
     min-width: 700px;
 }
 
@@ -43,7 +45,7 @@
     justify-content: center;
     gap: 1rem;
     max-width: 50%;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 .title button {
@@ -71,6 +73,53 @@
 }
 
 
+.recentpost {
+    padding: 2rem 8rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 700px;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #EDF7FA;
+}
 
+.uppertitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.uppertitle__right {
+    color: #00A8CC;
+}
+
+.textbox-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.textbox-container .textbox {
+    width: 48%;
+    min-width: 250px;
+}
+
+.textbox {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 1rem;
+    background-color: white;
+    padding: 1rem;
+}
+
+.textbox__midsection ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.textbox__midsection li {
+    list-style: none;
+}
 
 
