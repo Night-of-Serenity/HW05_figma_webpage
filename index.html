@@ -29,9 +29,17 @@
     <div class="container">
       <nav>
         <ul class="nav__list">
-          <li><a href="./work.html">Works</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="nav__list--normalbar"><a href="./work.html">Works</a></li>
+          <li class="nav__list--normalbar"><a href="./blog.html">Blog</a></li>
+          <li class="nav__list--normalbar"><a href="#">Contact</a></li>
+          <li class="dropdown">
+            <span class="dropdown-icon"><i class="fa-solid fa-bars"></i></span>
+            <ul class="dropdown__list">
+              <li><a href="./work.html">Works</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <main>
@@ -105,7 +113,7 @@
         <div class="featuredwork">
           <h5 class="featuredwork__title">Featured works</h5>
           <div class="itemsboard">
-            <div class="itemsboard__items">
+            <div class="itemsboard__items item-1">
               <div class="itemsboard__itemsbox">
                 <div class="itemsboard__itemsbox_img">
                   <img
@@ -133,7 +141,7 @@
                 <hr />
               </div>
             </div>
-            <div class="itemsboard__items">
+            <div class="itemsboard__items item-2">
               <div class="itemsboard__itemsbox">
                 <div class="itemsboard__itemsbox_img">
                   <img
@@ -163,7 +171,7 @@
                 <hr />
               </div>
             </div>
-            <div class="itemsboard__items">
+            <div class="itemsboard__items item-3">
               <div class="itemsboard__itemsbox">
                 <div class="itemsboard__itemsbox_img">
                   <img
@@ -195,22 +203,24 @@
         </div>
       </main>
       <footer>
-        <div class="footer__iconsbox">
-          <span class="footer__icon">
-            <i class="fa-brands fa-square-facebook"></i>
-          </span>
-          <span class="footer__icon">
-            <i class="fa-brands fa-instagram"></i>
-          </span>
-          <span class="footer__icon">
-            <i class="fa-brands fa-twitter"></i>
-          </span>
-          <span class="footer__icon">
-            <i class="fa-brands fa-linkedin"></i>
-          </span>
-        </div>
-        <div class="footer__text">
-          <p>Copyright &copy;2020 All rights reserved</p>
+        <div class="footer__container">
+          <div class="footer__iconsbox">
+            <span class="footer__icon">
+              <i class="fa-brands fa-square-facebook"></i>
+            </span>
+            <span class="footer__icon">
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+            <span class="footer__icon">
+              <i class="fa-brands fa-twitter"></i>
+            </span>
+            <span class="footer__icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </span>
+          </div>
+          <div class="footer__text">
+            <p>Copyright &copy;2020 All rights reserved</p>
+          </div>
         </div>
       </footer>
     </div>

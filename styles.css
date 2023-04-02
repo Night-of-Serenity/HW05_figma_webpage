@@ -34,6 +34,45 @@ body {
     font-weight: bold;
 }
 
+.dropdown {
+    display: none;
+    color: #21243D;
+    min-width: 100px;
+    text-align: right;
+    min-height: 8rem;
+}
+
+
+/* Navbar responsive 700px width */
+@media screen and (max-width: 700px) {
+    .nav__list {
+        /* max-width: 600px; */
+        min-width: 400px;
+        padding: 1rem;
+    }
+
+    .nav__list--normalbar{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    
+    .dropdown .dropdown__list a{
+        display: none;
+    }
+
+    .dropdown:hover .dropdown__list a {
+        display: block;
+        min-width: 100px;
+        border: 1px solid gainsboro;
+        position: relative;
+        padding: 2px 4px;
+        text-align: right;
+        z-index: 1;
+    }
+}
+
 main {
     min-height: 650px;
     min-width: 700px;
@@ -44,6 +83,7 @@ main {
     padding: 3rem 8rem;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     gap: 3rem;
     min-width: 700px;
     max-width: 1000px;
@@ -81,6 +121,21 @@ main {
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+/* Title section responsive */
+@media screen and (max-width: 700px)  {
+    .title {
+        flex-flow: column-reverse;]
+        min-width: 450px;
+        max-width: 600px;
+    }
+
+    .title__leftbox {
+        align-items: center;
+        min-width: 450px;
+        text-align: center;
+    }
 }
 
 /* Recentpost section */
@@ -138,6 +193,29 @@ main {
     list-style: none;
 }
 
+/* Recentpost section responsive */
+@media screen and (max-width: 700px) {
+    .recentpost-container {
+        max-width:600px;
+    }
+    .uppertitle {
+        justify-content: center;
+    }
+
+    .uppertitle__right {
+        display: none;
+    }
+
+    .textbox-container{
+        flex-flow: column;
+    }
+
+    .textbox-container .textbox {
+        min-width: 450px;
+    }
+}
+
+
 /* featuredwork section */
 .featuredwork {
     display: flex;
@@ -163,6 +241,7 @@ main {
 .itemsboard__itemsbox {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -178,7 +257,7 @@ main {
     display: flex;
     flex-flow: column;
     gap: 1rem;
-    min-width: 250px;
+    min-width: 300px;
     max-width: 600px;
 }
 
@@ -202,6 +281,28 @@ main {
 
 .itemsboard__items_line hr {
     border: 1px solid #E0E0E0;
+}
+
+@media screen and (max-width: 700px) {
+    .featuredwork {
+        max-width: 600px;
+    }
+    
+    .featuredwork__title {
+        text-align: center;
+    }
+
+    .itemsboard__itemsbox {
+        flex-flow: column;
+    }
+
+    .itemsboard__itemsbox_textbox {
+        min-width: 350px;
+    }
+
+    .item-2, .item-3 {
+        display: none;
+    }
 }
 
 
@@ -254,7 +355,7 @@ nav .current {
 
 
 /* footer section */
-footer {
+.footer__container {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -262,7 +363,8 @@ footer {
     padding-top: 3rem;
     padding-bottom: 2rem;
     gap: 1rem;
-    min-width: 500px;
+    min-width: 700px;
+    margin: 0 auto;
 }
 
 .footer__iconsbox {
@@ -273,4 +375,11 @@ footer {
 
 .footer__text {
     font-size: 14px;
+}
+
+@media screen and (max-width: 700px) {
+    .footer__container {
+        min-width: 350px;
+        max-width: 600px;
+    }
 }
