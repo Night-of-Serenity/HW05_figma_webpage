@@ -122,4 +122,10 @@
     list-style: none;
 }
 
+.featuredwork {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 2rem 8rem;
+    gap: 2rem;
+}
 
