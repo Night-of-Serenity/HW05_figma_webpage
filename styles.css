@@ -17,9 +17,8 @@ body {
 
 .nav__list {
     display: flex;
-
     justify-content: flex-end;
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     gap: 2rem;
     font-size: 20px;
 }
@@ -214,6 +213,7 @@ nav .current {
     flex-flow: column;
     justify-content: flex-start;
     gap: 3rem;
+    padding: 1rem 0;
 }
 
 .blog__itemsbox hr {
@@ -228,6 +228,16 @@ nav .current {
 .textbox__midsection__handlebar {
     color: #E0E0E0;
 }
+
+/* Work page */
+.work {
+    padding: 2rem 8rem;
+}
+
+.work__title {
+    padding: 1rem 0;
+}
+
 
 /* footer section */
 footer {
