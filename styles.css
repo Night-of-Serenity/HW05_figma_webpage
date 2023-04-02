@@ -156,7 +156,7 @@ main {
 .itemsboard__items {
     display: flex;
     flex-flow: column;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 2rem;
 }
 
