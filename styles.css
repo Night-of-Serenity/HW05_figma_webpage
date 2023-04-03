@@ -126,7 +126,7 @@ main {
 /* Title section responsive */
 @media screen and (max-width: 700px)  {
     .title {
-        flex-flow: column-reverse;]
+        flex-flow: column-reverse;
         min-width: 450px;
         max-width: 600px;
     }
